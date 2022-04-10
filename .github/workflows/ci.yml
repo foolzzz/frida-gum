@@ -7,6 +7,16 @@ on:
   pull_request:
     branches:
     - main
+  workflow_dispatch:
+    logLevel:
+      decription: 'Log level'
+      required: true
+      default: 'warnning'
+      type: choice
+      options:
+      - info
+      - warning
+      - debug
 
 jobs:
   build:

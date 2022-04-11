@@ -19,7 +19,7 @@ on:
       - debug
 
 jobs:
-  gir:
+  gir_testci:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout frida-gum
